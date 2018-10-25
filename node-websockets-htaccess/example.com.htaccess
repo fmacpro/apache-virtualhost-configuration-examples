@@ -1,6 +1,6 @@
 DirectoryIndex disabled
 RewriteEngine On
-RewriteCond %{HTTP:Upgrade} websocket						[NC]
-RewriteCond %{QUERY_STRING} transport=websocket	[NC]
-RewriteRule ^(.*) ws://127.0.0.1:3000/$1				[P]
-RewriteRule ^(.*) http://127.0.0.1:3000/$1			[P]
+RewriteCond %{HTTP:Upgrade} websocket           [NC]
+RewriteCond %{QUERY_STRING} transport=websocket [NC]
+RewriteRule ^(.*) ws://127.0.0.1:3000/$1        [P]
+RewriteRule ^(.*) http://127.0.0.1:3000/$1      [P]
